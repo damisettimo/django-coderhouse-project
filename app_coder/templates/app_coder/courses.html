@@ -2,14 +2,14 @@
 {% load static %}
 {% block app_coder_content %}
 
-<h2>Lista de Cursos</h2>
-<a class="card_custom" href="{% url 'app_coder:CourseDjangoForms' %}">Crear nuevo Curso</a>
+<h2>Categorias</h2>
+<a class="card_custom" href="{% url 'app_coder:categoriaDjangoForms' %}">Crear nuevo Curso</a>
 <hr></hr>
 <ul>
-    {% for course in courses %}
+    {% for categoria in categorias %}
         <li>
-            Curso: {{course.name}}
-            -- Camada: {{course.code}}
+            Curso: {{categoria.name}}
+            -- Camada: {{categoria.code}}
         </li>
     {% endfor %}
 </ul>
